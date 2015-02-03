@@ -1,0 +1,106 @@
+body {
+	margin-top: 0;
+	background-color: lightgrey;
+}
+
+header {
+	background: -webkit-radial-gradient(circle, black, lightgrey); /* Safari */
+  	background: -o-radial-gradient(circle, black, lightgrey); /* Opera 11.6 to 12.0 */
+  	background: -moz-radial-gradient(circle, black, lightgrey); /* Firefox 3.6 to 15 */
+    background: radial-gradient(circle, black, lightgrey); /* Standard syntax */
+	width:100%;
+	min-height: 100vh;
+	display: inline-flex;
+
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.logo {
+	font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+	float:left;
+	padding: 40px 0px 0px 20px;
+}
+
+.logo span {
+	background: white;
+	border: 1px solid white;
+	border-radius: 2em;
+	padding: 0.3em;
+}
+
+.logo-title {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.logo-title-span {
+	padding: 0.5em 0.7em;
+	border: 8px solid white;
+}
+
+.section-title {
+	text-align: center;
+	font-family: 'Open Sans', serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.websites, .tools {
+	padding-top: 6em;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+    margin: 0;
+	padding-top: 3em;
+}
+
+ul li {
+	display: inline;
+}
+
+.tools-list ul li img {
+	padding-left: 2em;
+	padding-bottom: 2em;
+	height: 5em;
+}
+
+#jquery {
+	height: 2.5em;		
+}
+
+.grow { 
+	transition: all 0.3s ease; 
+}
+
+.grow:hover { 
+	transform: scale(1.2); 
+}
+
+.tools {
+	padding-bottom: 2em;
+}
+
+@media screen and (max-width: 720px) {
+    .logo-title {
+    	font-size: 20px;
+    }
+
+    .logo-title-span {
+		border: 4px solid white;
+	}
+}
