@@ -1,5 +1,6 @@
 body {
-	margin-top: 0;
+	margin: 0;
+	margin-right: 0;
 	background-color: lightgrey;
 }
 
@@ -25,6 +26,7 @@ header {
 .logo {
 	font-family: 'Open Sans', sans-serif;
     font-size: 28px;
+    font-weight: 600;
 	float:left;
 	padding: 40px 0px 0px 20px;
 }
@@ -32,8 +34,12 @@ header {
 .logo span {
 	background: white;
 	border: 1px solid white;
-	border-radius: 2em;
-	padding: 0.3em;
+	border-radius: 1.4em;
+	padding: 0.5em 0.25em 0.5em 0.25em;
+}
+
+.logo span img {
+	width: 0.75em;
 }
 
 .logo-title {
@@ -52,6 +58,7 @@ header {
 }
 
 .section-title {
+	padding-bottom: 2em;
 	text-align: center;
 	font-family: 'Open Sans', serif;
     font-size: 48px;
@@ -63,10 +70,14 @@ header {
 	text-align: center;
 }
 
+.websites img {
+	border: 5px solid white;
+	width: 40%;
+}
+
 ul {
 	list-style-type: none;
     margin: 0;
-	padding-top: 3em;
 }
 
 ul li {
@@ -83,7 +94,7 @@ ul li {
 	height: 2.5em;		
 }
 
-.grow { 
+.grow, .grow-little { 
 	transition: all 0.3s ease; 
 }
 
@@ -91,8 +102,29 @@ ul li {
 	transform: scale(1.2); 
 }
 
+.grow-little:hover { 
+	transform: scale(1.1); 
+}
+
 .tools {
 	padding-bottom: 2em;
+}
+
+
+.animated.rotateInDownLeft {
+    -webkit-animation-duration: 2s;
+       -moz-animation-duration: 2s;
+        -ms-animation-duration: 2s;
+         -o-animation-duration: 2s;
+            animation-duration: 2s;
+}
+
+.animated.fadeIn {
+    -webkit-animation-duration: 5s;
+       -moz-animation-duration: 5s;
+        -ms-animation-duration: 5s;
+         -o-animation-duration: 5s;
+            animation-duration: 5s;
 }
 
 @media screen and (max-width: 720px) {
