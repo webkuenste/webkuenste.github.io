@@ -72,6 +72,7 @@ header {
 
 .websites img {
 	border: 5px solid white;
+	margin-bottom: 40px;
 	width: 40%;
 }
 
@@ -107,7 +108,7 @@ ul li {
 }
 
 .tools {
-	padding-bottom: 2em;
+	padding-bottom: 4em;
 }
 
 
