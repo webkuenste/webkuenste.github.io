@@ -61,11 +61,33 @@ header {
 	padding-bottom: 2em;
 	text-align: center;
 	font-family: 'Open Sans', serif;
-    font-size: 48px;
+    font-size: 46px;
     font-weight: 400;
+    color: #474747;
 }
 
-.websites, .tools {
+.about{
+	width: 45%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.about-list ul li img {
+	width: 50%;
+	padding: 10%;
+}
+
+.about-list ul {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;  
+} 
+
+.smaller-svg {
+	height: 6.2em;
+}
+
+.about, .websites, .tools {
 	padding-top: 6em;
 	text-align: center;
 }
@@ -78,7 +100,8 @@ header {
 
 ul {
 	list-style-type: none;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 ul li {
@@ -86,8 +109,7 @@ ul li {
 }
 
 .tools-list ul li img {
-	padding-left: 2em;
-	padding-bottom: 2em;
+	padding: 1em;
 	height: 5em;
 }
 
@@ -110,7 +132,6 @@ ul li {
 .tools {
 	padding-bottom: 4em;
 }
-
 
 .animated.rotateInDownLeft {
     -webkit-animation-duration: 2s;
