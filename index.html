@@ -19,10 +19,15 @@
 		
 		<link rel="stylesheet" href="style.css" type="text/css"/>
 
+		<link rel="icon" type="image/png" href="images/favicon_portfolio.png">
+
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet' type='text/css'>
 		
+		<script src="https://ajax.googleapis.com/ajax/libs/threejs/r69/three.min.js"></script>
+
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
 		<script>
 		/* smooth scrolling */
 		$(function() {
@@ -40,17 +45,20 @@
 		  });
 		});
 		</script>
+		<style> [data-sr] { visibility: hidden; } </style>
 	</head>
 	
 	<body>
 
 		<header>
-			
 			<div class="logo animated rotateInDownLeft"><span>&lt;<img src="images/glyphicons-235-brush.png">&gt;</span></div>
 			<h1><div class="logo-title animated fadeIn"><span class="logo-title-span">Design <span class="gabriela-font">&</span> Develop</span></div></h1>
 			<p></p>
 		</header>
 
+		<div id="WebGLoutput">	
+		</div>
+		
 		<div class="about">
 			<div class="section-title" data-sr="enter bottom move 150px, after 0.9s">
 				About
@@ -69,14 +77,21 @@
 			<div class="section-title" data-sr="enter bottom move 150px, after 0.9s"> 
 				Websites
 			</div>
-			
-			<div> 
-				<a href="http://webkuenste.github.io/Beratung"><img src="images/beratung_screenshot2.jpg" alt="Beratung website" class="grow-little"></a>
+
+			<div class="view">  
+   				<img src="images/beratung_screenshot2.jpg" alt="Beratung website" />
+     			<div class="mask">
+         			<a href="http://webkuenste.github.io/Beratung" class="info"><img src="images/linkwhite.svg" /></a>  
+     			</div>  
 			</div>
-			
-			<div> 
-				<a href="http://webkuenste.github.io/restaurant"><img src="images/restaurant_screenshot.jpg" alt="Restaurant website" class="grow-little"></a>
+
+			<div class="view">  
+   				<img src="images/restaurant_screenshot.jpg" alt="Restaurant website" />
+     			<div class="mask">
+         			<a href="http://webkuenste.github.io/restaurant" class="info"><img src="images/linkwhite.svg" /></a>  
+     			</div>  
 			</div>
+
 		</div>
 
 		<div class="tools">
@@ -97,6 +112,7 @@
 			</div>
 		</div>
 
+		<script src="js/js.js"></script>
 
 		<script src="js/scrollReveal.min.js"></script>
     	<script>
