@@ -1,4 +1,5 @@
 <!doctype html>
+
 <!--
   ____            _                ___     ____                 _             
  |  _ \  ___  ___(_) __ _ _ __    ( _ )   |  _ \  _____   _____| | ___  _ __  
@@ -7,12 +8,15 @@
  |____/ \___||___/_|\__, |_| |_|  \___/\/ |____/ \___| \_/ \___|_|\___/| .__/ 
                     |___/                                              |_|    
 -->
-<html>
+
+<html lang="de">
 	<head>
 		<title>
 			Portfolio
 		</title>
 
+		<meta charset="utf-8"/>
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" href="animate.min.css">
@@ -28,23 +32,6 @@
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	
-		<script>
-		/* smooth scrolling */
-		$(function() {
-		  $('a[href*=#]:not([href=#])').click(function() {
-		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-		      var target = $(this.hash);
-		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		      if (target.length) {
-		        $('html,body').animate({
-		          scrollTop: target.offset().top
-		        }, 1000);
-		        return false;
-		      }
-		    }
-		  });
-		});
-		</script>
 		<style> [data-sr] { visibility: hidden; } </style>
 	</head>
 	
@@ -65,10 +52,10 @@
 			</div>
 			<div class="about-list">
 				<ul>
-					<li><img src="images/mobile3.svg" alt="Mobile" class="grow" data-sr="enter left move 150px, after 0.1s"></li>
-					<li><img src="images/brush2.svg" alt="Design" class="grow" data-sr="enter left move 150px, after 0.9s"></li>
-					<li><img src="images/display2.svg" alt="Desktop" class="grow" data-sr="enter right move 150px, after 0.9s"></li>
-					<li><img src="images/code.svg" alt="Development" class="grow" data-sr="enter right move 150px, after 0.9s"></li>
+					<li><img src="images/mobilenew.svg" alt="Mobile" class="grow" data-sr="enter left move 150px, after 0.1s"><div class="tooltip">MOBILE</div></li>
+					<li><img src="images/brushnew2.svg" alt="Design" class="grow" data-sr="enter left move 150px, after 0.9s"><div class="tooltip">DESIGN</div></li>
+					<li><img src="images/displaynew.svg" alt="Desktop" class="grow" data-sr="enter right move 150px, after 0.9s"><div class="tooltip">DESKTOP</div></li>
+					<li><img src="images/codenew2.svg" alt="Development" class="grow" data-sr="enter right move 150px, after 0.9s"><div class="tooltip">CODE</div></li>
 				</ul>	
 			</div>
 		</div>
@@ -100,14 +87,14 @@
 			</div>
 			<div class="tools-list">
 				<ul>
-					<li><img src="images/html.png" alt="HTML5" class="grow" id="html5-logo"></li>
-					<li><img src="images/css.png" alt="CSS3" class="grow" id="css3-logo"></li>
-					<li><img src="images/javascript.png" alt="JavaScript" class="grow"></li>
-					<li><img src="images/jquery.png" alt="jQuery" class="grow" id="jquery-logo"></li>
-					<li><img src="images/photoshop.png" alt="Photoshop" class="grow"></li>
-					<li><img src="images/bootstrap.png" alt="Bootstrap" class="grow"></li>
-					<li><img src="images/sass.png" alt="Sass" class="grow"></li>
-					<li><img src="images/sublime.png" alt="Sublime Text" class="grow"></li>
+					<li><img src="images/html.png" alt="HTML5" class="grow" id="html5-logo"><div class="tooltip">HTML5</div></li>
+					<li><img src="images/css.png" alt="CSS3" class="grow" id="css3-logo"><div class="tooltip">CSS3</div></li>
+					<li><img src="images/javascript.png" alt="JavaScript" class="grow"><div class="tooltip">JavaScript</div></li>
+					<li><img src="images/jquery.png" alt="jQuery" class="grow" id="jquery-logo"><div class="tooltip">jQuery</div></li>
+					<li><img src="images/photoshop.png" alt="Photoshop" class="grow"><div class="tooltip">Photoshop</div></li>
+					<li><img src="images/bootstrap.png" alt="Bootstrap" class="grow"><div class="tooltip">Bootstrap</div></li>
+					<li><img src="images/sass.png" alt="Sass" class="grow"><div class="tooltip">Sass</div></li>
+					<li><img src="images/sublime.png" alt="Sublime Text" class="grow"><div class="tooltip">Sublime</div></li>
 				</ul>	
 			</div>
 		</div>
@@ -117,7 +104,7 @@
 		<script src="js/scrollReveal.min.js"></script>
     	<script>
 
-      	window.sr = new scrollReveal();
+      		window.sr = new scrollReveal();
 
     	</script>
 

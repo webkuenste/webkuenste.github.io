@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	margin-right: 0;
 	background-color: lightgrey;
+  font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -69,7 +70,7 @@ header {
 	text-align: center;
 	text-transform: lowercase;
 	font-variant: all-petite-caps;
-	font-family: 'Open Sans', serif;
+	font-family: 'Open Sans', sans-serif;
   font-size: 52px;
   font-weight: 400;
   color: #474747;
@@ -92,6 +93,25 @@ header {
      -moz-column-count: 2;
           column-count: 2;  
 } 
+
+.about-list ul li, .tools-list ul li {
+  position: relative;
+}
+
+.tooltip {
+  padding: 0.2em;
+  color: #D3D3D3;
+  display: none;
+}
+
+li:hover .tooltip {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  -moz-transform:translate(-50%,80%);
+  background: #474747;
+}
 
 .smaller-svg {
 	height: 6.2em;
