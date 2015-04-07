@@ -68,33 +68,26 @@ header {
 .section-title {
 	padding-bottom: 2em;
 	text-align: center;
-	text-transform: lowercase;
-	font-variant: all-petite-caps;
+	text-transform: uppercase;
 	font-family: 'Open Sans', sans-serif;
-  font-size: 52px;
+  font-size: 42px;
   font-weight: 400;
   color: #474747;
   letter-spacing: 0.1em;
 }
 
 .about{
-	width: 45%;
+	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.about-list ul li img {
-	width: 50%;
-	padding: 10%;
+.about-list img {
+	width: 36%;
+	padding: 6%;
 }
 
-.about-list ul {
-  -webkit-column-count: 2;
-     -moz-column-count: 2;
-          column-count: 2;  
-} 
-
-.about-list ul li, .tools-list ul li {
+.about-image, .tools-list ul li {
   position: relative;
 }
 
@@ -104,12 +97,14 @@ header {
   display: none;
 }
 
-li:hover .tooltip {
+.about-image:hover .tooltip, .tools-list li:hover .tooltip {
   display: inline-block;
   position: absolute;
   left: 50%;
   top: -50%;
-  -moz-transform:translate(-50%,80%);
+  -webkit-transform:translate(-50%,80%);
+     -moz-transform:translate(-50%,80%);
+          transform:translate(-50%,80%);
   background: #474747;
 }
 
@@ -123,10 +118,10 @@ li:hover .tooltip {
 }
 
 .view {
-  width: 40%;
+  width: 50%;
   height: auto;
   margin: 10px auto;
-  border: 10px solid #fff;
+  border: 0.2em solid #fff;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -164,6 +159,7 @@ li:hover .tooltip {
        -o-transition: all 0.2s linear;
           transition: all 0.2s linear;
 }
+
 .view a.info {
   width: 4%;
   color: #fff;
@@ -230,19 +226,24 @@ ul li {
 }
 
 .grow, .grow-little { 
-	transition: all 0.3s ease; 
+  -webkit-transition: all 0.3s ease;
+	        transition: all 0.3s ease; 
 }
 
-.grow:hover { 
-	transform: scale(1.2); 
+.grow:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+	        transform: scale(1.2);
 }
 
 .grow-little:hover { 
-	transform: scale(1.1); 
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+	        transform: scale(1.1);
 }
 
 .tools {
-	padding-bottom: 8em;
+	padding-bottom: 80px;
 }
 
 .animated.rotateInDownLeft {
@@ -262,11 +263,22 @@ ul li {
 }
 
 @media screen and (max-width: 720px) {
-    .logo-title {
+
+  .logo {
+    font-size: 18px;
+    padding: 40px 0px 0px 20px;
+  }
+
+  .logo-title {
     	font-size: 20px;
     }
 
-    .logo-title-span {
+  .logo-title-span {
 		border: 4px solid white;
 	}
+
+  .section-title {
+  padding-bottom: 2em;
+  font-size: 22px;
+  }
 }
