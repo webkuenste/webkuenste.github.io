@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	margin-right: 0;
-	background-color: lightgrey;
+	background-color: white;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -24,6 +24,8 @@ header {
 	position: absolute;
 	top: 0px;
 	z-index: -10;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 .logo {
@@ -32,6 +34,11 @@ header {
   font-weight: 600;
 	float:left;
 	padding: 40px 0px 0px 20px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
 }
 
 .logo span {
@@ -68,7 +75,7 @@ header {
 }
 
 .section-title {
-	padding-bottom: 2em;
+	padding-bottom: 0.8em;
 	text-align: center;
 	text-transform: uppercase;
 	font-family: 'Open Sans', sans-serif;
@@ -95,7 +102,7 @@ header {
 
 .tooltip {
   padding: 0.2em;
-  color: #D3D3D3;
+  color: white;
   display: none;
 }
 
@@ -220,7 +227,7 @@ ul li {
 
 .tools-list ul li img {
   width: 7%;
-	padding: 1%;
+	padding: 0px 1% 1% 1%;
 }
 
 #jquery-logo {
@@ -254,7 +261,7 @@ footer {
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 0.1em;
-  color: #D3D3D3;
+  color: white;
   background-color: #474747;
 }
 
@@ -274,15 +281,14 @@ footer {
           animation-duration: 5s;
 }
 
-
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
   .logo {
     font-size: 18px;
     padding: 40px 0px 0px 20px;
   }
 
   .logo-title {
-    	font-size: 20px;
+    	font-size: 22px;
     }
 
   .logo-title-span {

@@ -11,11 +11,9 @@
 
 <html lang="de">
 	<head>
-		<title>
-			Portfolio
-		</title>
+		<title>Portfolio</title>
 
-		<meta charset="UTF-8">
+		<meta charset="utf-8">
 		<meta name="description" content="WebKünste, Portfolio">
 		<meta name="author" content="WebKünste">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,14 +26,12 @@
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/threejs/r69/three.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	
-		<style> [data-sr] { visibility: hidden; } </style>
 	</head>
 	
 	<body>
 
 		<header>
-			<div class="logo animated rotateInDownLeft"><span>&lt;<img src="images/glyphicons-235-brush.png">&gt;</span></div>
+			<div class="logo animated rotateInDownLeft"><a href="http://webkuenste.github.io"><span>&lt;<img src="images/glyphicons-235-brush.png">&gt;</span></a></div>
 			<h1><div class="logo-title animated fadeIn"><span class="logo-title-span">Design <span class="gabriela-font">&</span> Develop</span></div></h1>
 			<p></p>
 		</header>
@@ -44,35 +40,35 @@
 		</div>
 		
 		<div class="about">
-			<div class="section-title" data-sr="enter bottom move 150px, after 0.9s">
+			<div class="section-title wow fadeInUp">
 				ABOUT
 			</div>
 
 			<div class="about-list">
 				<div>
-					<span class="about-image"><img src="images/mobilenew.svg" alt="Mobile" class="grow" data-sr="enter left move 150px, after 0.1s"><div class="tooltip">MOBILE</div></span>
-					<span class="about-image"><img src="images/displaynew.svg" alt="Desktop" class="grow" data-sr="enter right move 150px, after 0.9s"><div class="tooltip">DESKTOP</div></span>
+					<span class="about-image"><img src="images/mobilenew.svg" alt="Mobile" class="grow wow slideInLeft"><div class="tooltip">MOBILE</div></span>
+					<span class="about-image"><img src="images/displaynew.svg" alt="Desktop" class="grow wow slideInRight"><div class="tooltip">DESKTOP</div></span>
 				</div>
 				<div>
-					<span class="about-image"><img src="images/brushnew2.svg" alt="Design" class="grow" data-sr="enter left move 150px, after 0.9s"><div class="tooltip">DESIGN</div></span>
-					<span class="about-image"><img src="images/codenew2.svg" alt="Development" class="grow" data-sr="enter right move 150px, after 0.9s"><div class="tooltip">CODE</div></span>
+					<span class="about-image"><img src="images/brushnew2.svg" alt="Design" class="grow wow slideInLeft"><div class="tooltip">DESIGN</div></span>
+					<span class="about-image"><img src="images/codenew2.svg" alt="Development" class="grow wow slideInRight"><div class="tooltip">CODE</div></span>
 				</div>	
 			</div>
 		</div>
 
 		<div class="websites">
-			<div class="section-title" data-sr="enter bottom move 150px, after 0.9s"> 
+			<div class="section-title wow fadeInUp">
 				WEBSITES
 			</div>
 
-			<div class="view">  
+			<div class="view">
    				<img src="images/beratung_screenshot2.jpg" alt="Beratung website" />
      			<div class="mask">
          			<a href="http://webkuenste.github.io/Beratung" class="info"><img src="images/linkwhite.svg" /></a>  
      			</div>  
 			</div>
 
-			<div class="view">  
+			<div class="view">
    				<img src="images/restaurant_screenshot.jpg" alt="Restaurant website" />
      			<div class="mask">
          			<a href="http://webkuenste.github.io/restaurant" class="info"><img src="images/linkwhite.svg" /></a>  
@@ -82,7 +78,7 @@
 		</div>
 
 		<div class="tools">
-			<div class="section-title" data-sr="enter bottom move 150px, after 0.9s">
+			<div class="section-title wow fadeInUp">
 				TOOLS
 			</div>
 			<div class="tools-list">
@@ -104,11 +100,9 @@
 		</footer>
 
 		<script src="js/js.js"></script>
-		<script src="js/scrollReveal.min.js"></script>
-    	<script>
-      		window.sr = new scrollReveal();
-    	</script>
-
+    	<script src="js/wow.js"></script>
+		<script>
+			new WOW().init();
+		</script>
 	</body>
-	
 </html>

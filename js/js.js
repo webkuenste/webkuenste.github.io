@@ -4,10 +4,10 @@ $(function (){
   var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
   var renderer = new THREE.WebGLRenderer();
   renderer.setSize(window.innerWidth, window.innerHeight);
-  renderer.setClearColorHex(0x0D0D0D); 
+  renderer.setClearColor(0x0D0D0D); 
   scene.fog = new THREE.FogExp2(0x000000, 0.005);
   
-  var groundGeometry = new THREE.PlaneGeometry(410,410,4,4);
+  var groundGeometry = new THREE.PlaneBufferGeometry(410,410,4,4);
   var groundMaterial = new THREE.MeshPhongMaterial({color:0x244876});
   groundMaterial.shininess = 100;
   var ground = new THREE.Mesh(groundGeometry,groundMaterial);
@@ -33,7 +33,7 @@ $(function (){
   scene.add(pointLight);
   
   var building = [];
-  var buildingGeometry = new THREE.CubeGeometry(4,4,4); 
+  var buildingGeometry = new THREE.BoxGeometry(4,4,4); 
   var buildingMaterial = new THREE.MeshPhongMaterial({color: 0x244876}); 
   buildingMaterial.shininess = 100;
   var building = [];
