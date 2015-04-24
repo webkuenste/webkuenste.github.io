@@ -4,11 +4,11 @@ $(function (){
   var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
   var renderer = new THREE.WebGLRenderer();
   renderer.setSize(window.innerWidth, window.innerHeight);
-  renderer.setClearColor(0x0D0D0D); 
-  scene.fog = new THREE.FogExp2(0x000000, 0.005);
+  renderer.setClearColor(0x474747); 
+  scene.fog = new THREE.FogExp2(0xffffff, 0.002);
   
   var groundGeometry = new THREE.PlaneBufferGeometry(410,410,4,4);
-  var groundMaterial = new THREE.MeshPhongMaterial({color:0x244876});
+  var groundMaterial = new THREE.MeshPhongMaterial({color:0x474747});
   groundMaterial.shininess = 100;
   var ground = new THREE.Mesh(groundGeometry,groundMaterial);
   scene.add(ground);
@@ -25,16 +25,16 @@ $(function (){
   camera.rotation.z = -0.280;
   camera.rotation.x = -0.400;
   
-  var directionalLight = new THREE.DirectionalLight(0xffffff, 1); 
-  directionalLight.position.set( -20, 10, 30 ); 
+  var directionalLight = new THREE.DirectionalLight(0x474747, 6); 
+  directionalLight.position.set( -20, 15, 30 ); 
   scene.add(directionalLight);
   
-  var pointLight = new THREE.PointLight(0x000000, 10, 100);
+  var pointLight = new THREE.PointLight(0xffffff, 10, 32);
   scene.add(pointLight);
   
   var building = [];
   var buildingGeometry = new THREE.BoxGeometry(4,4,4); 
-  var buildingMaterial = new THREE.MeshPhongMaterial({color: 0x244876}); 
+  var buildingMaterial = new THREE.MeshPhongMaterial({color: 0x474747}); 
   buildingMaterial.shininess = 100;
   var building = [];
   var rowZ = 0;
