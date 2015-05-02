@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 
 <!--
-  ____            _                ___     ____                 _             
- |  _ \  ___  ___(_) __ _ _ __    ( _ )   |  _ \  _____   _____| | ___  _ __  
- | | | |/ _ \/ __| |/ _` | '_ \   / _ \/\ | | | |/ _ \ \ / / _ \ |/ _ \| '_ \ 
- | |_| |  __/\__ \ | (_| | | | | | (_>  < | |_| |  __/\ V /  __/ | (_) | |_) |
- |____/ \___||___/_|\__, |_| |_|  \___/\/ |____/ \___| \_/ \___|_|\___/| .__/ 
-                    |___/                                              |_|    
+  ____              _               
+ |  _ \   ___  ___ (_)  __ _  _ __  
+ | | | | / _ \/ __|| | / _` || '_ \ 
+ | |_| ||  __/\__ \| || (_| || | | |
+ |____/  \___||___/|_| \__, ||_| |_|
+                       |___/        
+   ___   
+  ( _ )  
+  / _ \/\
+ | (_>  <
+  \___/\/         
+  ____                     _               
+ |  _ \   ___ __   __ ___ | |  ___   _ __  
+ | | | | / _ \\ \ / // _ \| | / _ \ | '_ \ 
+ | |_| ||  __/ \ V /|  __/| || (_) || |_) |
+ |____/  \___|  \_/  \___||_| \___/ | .__/ 
+                                    |_|    
 -->
 
 <html lang="de">
@@ -14,12 +25,14 @@
 		<title>Portfolio</title>
 
 		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta name="description" content="WebKünste, Portfolio">
+		<meta name="keywords" content="Webseiten, Websites, Webdesign">
 		<meta name="author" content="WebKünste">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" href="animate.min.css">
-		<link rel="stylesheet" href="style.css" type="text/css"/>
+		<link rel="stylesheet" href="style.min.css" type="text/css"/>
 		<link rel="icon" type="image/png" href="images/favicon_portfolio.png">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet' type='text/css'>
@@ -31,10 +44,10 @@
 	<body>
 
 		<header>
-			<div class="logo animated rotateInDownLeft"><a href="http://webkuenste.github.io"><span>&lt;<img src="images/glyphicons-235-brush.png">&gt;</span></a></div>
-			<h1><div class="logo-title animated fadeIn"><span class="logo-title-span">Design <span class="gabriela-font">&</span> Develop</span></div></h1>
-			<p></p>
-		</header>
+      		<div class="logo animated rotateInDownLeft"><a href="http://webkuenste.github.io"><img src="images/logo.svg"></a></div>
+      		<h1><div class="logo-title animated fadeIn"><span class="logo-title-span">Design <span class="gabriela-font">&</span> Develop</span></div></h1>
+      		<p></p>
+    	</header>
 
 		<div id="WebGLoutput">	
 		</div>
@@ -97,12 +110,15 @@
 
 		<footer>
 			WEBKÜNSTE
+			<a href="https://github.com/webkuenste/webkuenste.github.io"><img src="images/github.svg"></a>	
 		</footer>
 
-		<script src="js/js.js"></script>
+		<script src="js/functions_portfolio.min.js"></script>
     	<script src="js/wow.js"></script>
 		<script>
 			new WOW().init();
 		</script>
+		
 	</body>
+	
 </html>

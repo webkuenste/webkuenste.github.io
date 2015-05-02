@@ -29,9 +29,6 @@ header {
 }
 
 .logo {
-	font-family: 'Open Sans', sans-serif;
-  font-size: 28px;
-  font-weight: 600;
 	float:left;
 	padding: 40px 0px 0px 20px;
 }
@@ -41,15 +38,8 @@ a:link {
     color: black;
 }
 
-.logo span {
-	background: white;
-	border: 1px solid white;
-	border-radius: 1.4em;
-	padding: 0.5em 0.25em 0.5em 0.25em;
-}
-
-.logo span img {
-	width: 0.75em;
+.logo img {
+  width: 60px;
 }
 
 .logo-title {
@@ -268,6 +258,12 @@ footer {
   background-color: #474747;
 }
 
+footer img {
+  display: block;
+  margin: 10px auto;
+  width: 40px;
+}
+
 .animated.rotateInDownLeft {
   -webkit-animation-duration: 2s;
      -moz-animation-duration: 2s;
@@ -306,4 +302,5 @@ footer {
   footer {
     font-size: 14px;
   }
+  
 }
